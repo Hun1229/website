@@ -1,0 +1,93 @@
+/* ヘッダー 
+-------------------------------*/
+header{
+    display: flex;                  /*横並び*/
+     justify-content: space-between;/*logoとリンクを左右に配置 */
+    align-items: center;            /*リンクを上下中央揃え*/
+    background-color: rgb(15, 217, 236);
+}
+
+.main-nav {
+    display: flex;  
+    gap: 20px;        /*横並びの間隔*/
+    font-size: 1rem;/*フォントサイズ:16*1.3px    */
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+
+
+/*ボディー 
+-------------------------------*/
+#main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;/*比率*/
+    grid-template-rows: 1fr 1fr;   /*比率*/
+    height: 1000px;
+    place-items: center;
+}
+#content1{/*後で消す*/
+    gap: 10px;
+    }
+
+#content2{
+     width: 400px;
+    height: 200px;
+    text-align: left;
+    background-color: #eeeeee;
+    border: 1px solclass black;
+}
+#content3{
+     width: 400px;
+    height: 500px;
+    margin-bottom: 100px;
+    background-color: #eeeeee;
+    border: 1px solclass black;
+}
+#content4{
+     width: 400px;
+    height: 500px;
+    margin-bottom: 100px;
+    background-color: #eeeeee;
+    border: 1px solclass black;
+}
+.midasi{
+    padding: 0% 40%;
+}
+/* 共通点
+-------------------------------*/
+/*足軽*/
+.asigal{
+    position: fixed;/*スクロールしても固定される*/
+    right: 20px;    /*右下に寄せた*/
+    bottom: 20px;   /*同上*/
+    height: auto;   /*縦横比を固定*/
+}
+/*吹き出し*/
+#hukidasi{
+    position: fixed;                /*任意の位置に置く*/
+    left: 95%;                      /*右下に寄せた*/
+    bottom: 15%;                    /*同上*/
+   transform: translate(-170%, 50%);/*よくわからん*/
+    opacity: 0;                     /*見えないようにする*/
+    pointer-events: none;           /*クリックできないようにする*/
+    text-decoration: 0.3s;
+}
+#hukidasi.visible{
+     opacity: 1;          /*見えるようにする*/
+    pointer-events: auto;/*クリックできないようにする*/
+}
+/*wakamesu-pu
+-------------------------------*/
+.ko-nsu-pu{
+    background-color: orange;
+    padding: 1px 0 1px 0;  /**/
+}
+#negitoro{
+    width: 450px;
+    height:400px;
+    background-image: url(../img/wakamesu-pu.jpg);
+    background-size: cover;
+    border-radius: 10px;   /*角を丸くする*/
+    
+}

@@ -1,0 +1,48 @@
+/* ヘッダー 
+-------------------------------*/
+.main-nav {
+  display: flex;/*横並び*/
+  gap: 20px; /* 間隔 */
+  list-style: none; /* 点を消す */
+  padding: 0;
+}
+/* アニメーション
+------------------------------- */
+#header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  top: -300px;   /* いったん上に隠す */
+  left: 0;
+  wclassth: 100%;
+  background: #0ac6e7;
+  transition: top 0.4s ease;/*どれだけ時間をかけるか*/
+}
+
+#header.open {
+  top: 0;        /* ここまで降りてくる */
+}
+#toggleBtn{/*メニューボタン*/
+/* ボタン */
+   position: fixed;
+   top: 10px;
+   left: 100px;
+   z-index: 1000;/*ヘッダーより前に出す*/
+}
+/*　ボディー 
+-------------------------------*/
+/* .pct{ビデオを入れる */
+    /* wclassth: 100%;          画面に合わせて常に可変 */
+    /* max-wclassth: 1270px;    必要なら上限だけ設定（なくてもOK） */
+    /* height: 645px; */
+    /* background-color: #eeeeee; */
+    /* border: 1px solclass black; */
+    /* } */
+/* ガイドボタン */
+.asigal{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
